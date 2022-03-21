@@ -5,9 +5,11 @@ start.onclick = function() {
     if(result==='зеленый'){
        const element = document.querySelector('.circle1')
         element.style.backgroundColor = 'green'
-        const p = document.createElement('p');
-        p.innerText = 'GO';
-        element.append(p)
+        const element2 = document.querySelector('.circle2')
+        element2.style.backgroundColor = 'transparent'
+        const element3 = document.querySelector('.circle3')
+        element3.style.backgroundColor = 'transparent'
+        alert('GO')
 
     }
 
@@ -15,17 +17,23 @@ start.onclick = function() {
 
         const element2 = document.querySelector('.circle2')
         element2.style.backgroundColor = 'yellow'
-        const p = document.createElement('p');
-        p.innerText = 'WAIT';
-        element2.append(p)
+        const element3 = document.querySelector('.circle3')
+        element3.style.backgroundColor = 'transparent'
+        const element = document.querySelector('.circle1')
+        element.style.backgroundColor = 'transparent'
+       alert('WAIT')
+
     }
    if(result==='красный') {
 
         const element3 = document.querySelector('.circle3')
         element3.style.backgroundColor = 'red'
-        const p = document.createElement('p');
-        p.innerText = 'STOP';
-        element3.append(p)
+        const element = document.querySelector('.circle1')
+        element.style.backgroundColor = 'transparent'
+       const element2 = document.querySelector('.circle2')
+        element2.style.backgroundColor = 'transparent'
+       alert('STOP')
+
     }
     };
 
